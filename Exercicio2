@@ -1,0 +1,12 @@
+function voteOrNo(idade) {
+  if (idade <= 0) {
+    return "Idade invalida";
+  }
+  if (idade >= 18 && idade < 70) {
+    return "Eleitor Obrigatorio.";
+  } else if (idade === 16 || idade >= 17 || idade >= 70) {
+    return "Eleitor Facultativo.";
+  } else idade < 16;
+  return "Nao tem direito ao voto.";
+}
+console.log(voteOrNo(18));
