@@ -1,0 +1,6 @@
+function contaDeBar(consumido, pessoas, taxa){
+    if(pessoas > 0 && taxa >= 0 && taxa <= 100){
+        return (consumido + (taxa/100 * consumido)) / pessoas
+    } return "Valor invalido"
+}
+console.log(contaDeBar(1000,1,10));
